@@ -17,23 +17,6 @@ namespace PensionerMVC.Controllers
 
 
         [HttpGet]
-        public async Task<Pensioner> GetPensioner(long aadharid)
-        {
-            Pensioner p = new Pensioner();
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri(BaseUrl);
-                client.DefaultRequestHeaders.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage res = await client.GetAsync("api/Pensioners/" + aadharid);
-                if (res.IsSuccessStatusCode)
-                {
-                    var result = res.Content.ReadAsStringAsync().Result;
-                    p = JsonConvert.DeserializeObject<Pensioner>(result);
-                }
-            }
-            return (p);
-        }
         public IActionResult Index()
         {
             return View();
