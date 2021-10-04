@@ -18,6 +18,7 @@ namespace PensionerMVC.Controllers
 
         [Authorize]
         [HttpGet]
+<<<<<<< HEAD
         public async Task<Pensioner> GetPensioner(long aadharid)
         {
             Pensioner p = new Pensioner();
@@ -37,6 +38,8 @@ namespace PensionerMVC.Controllers
         }
 
         [Authorize]
+=======
+>>>>>>> dae11d5307d5d8fbe8ca7fd15b175c68d0f44745
         public IActionResult Index()
         {
             return View();
