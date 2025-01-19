@@ -5,5 +5,5 @@
 ### The MVC (in right side of the image) is consuming the REST API services and users are able to interact with the application through MVC side.
 
   <a href="https://github.com/sayanpr8175/WPF-Weather-Forex-REST">
-    <img src="./ApplicationSnapShot/RESTAPI_ENDPoints and MVC.PNG" alt="App Preview" width="1800" height="900">
+    <img src="./ApplicationSnapShot/RESTAPI_ENDPoints and MVC.PNG" alt="App Preview" width="1800" height="800">
   </a>
